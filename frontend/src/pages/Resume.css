@@ -1,0 +1,65 @@
+.resume-container {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.resume-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.resume-card {
+  max-width: 420px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+/* Square box */
+.resume-preview-box {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* 🔥 makes it square */
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+/* Blurred image */
+.resume-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px) brightness(0.9); /* 🔥 blur effect */
+  transition: all 0.3s ease;
+}
+
+/* Optional slight focus on hover */
+.resume-preview-box:hover .resume-preview {
+  filter: blur(2px) brightness(0.9);
+}
+
+/* Buttons */
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.resume-btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+}
+
+.resume-btn.view {
+  background: transparent;
+  border: 1px solid var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.resume-btn.download {
+  background: var(--accent-primary);
+  color: white;
+}
